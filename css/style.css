@@ -164,6 +164,9 @@ main{
      align-items: center;
      padding-bottom: 60px;
  }
+ .footer-icon a{
+     text-decoration: none;
+ }
 .footer-icon .fab{
     margin-right: 14px;
     border: 1px solid #ddd;
