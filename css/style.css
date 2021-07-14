@@ -1,0 +1,398 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+main{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*---------------------------------------------------
+         ------- Header-Section-Start-----------
+ --------------------------------------------------- */
+.header-section{
+    background-color: #2D25A0;
+    padding-top: 67px;
+    display: flex;
+    justify-content: center;
+}
+
+.header-half-section h1{  
+    font-family: 'Poppins', sans-serif;
+    font-size: 64px;
+    color: white;
+    transition: transform 2s;
+}
+.header-section:hover h1{
+    transform: translate(50px);
+}
+.header-half-section a{
+    background-color: rgba(224, 44, 109, 1);
+    color: white;
+    padding: 10px 24px;
+    text-decoration: none;
+    border-radius: 2px;
+}
+.header-half-section .header-arrow-icon{
+    padding-left: 8px;
+}
+.header-half-section > img{
+    margin-left: 102px;
+    padding-bottom: 56px;
+    transition: transform 2s;
+}
+.header-section:hover img{
+    transform: translate(50px);
+}
+
+/*---------------------------------------------------
+         ------- Main-Section-Start-----------
+ --------------------------------------------------- */
+ .container{
+     width: 1050px;
+     padding-bottom: 60px;
+ }
+.players{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+}
+.player{
+    padding: 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.player .player-thumbnail img{
+    width: 300px;
+    height: 256px;
+} 
+.player-detail h2{
+    margin-top: 12px;
+    margin-bottom: 10px;
+    color: #18191F;
+}
+.player-detail p{
+    color: #6C6C6C;
+    margin-top: 0px;
+    padding-bottom: 18px;
+}
+
+
+
+
+
+/*-----------------------------------------------------
+        ------------ player-section ------------
+------------------------------------------------------- */
+
+.team-section{
+    display: flex;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.team-icons{
+    padding-top: 30px;
+    padding-right: 20px;
+}
+.team-all-icons{
+    display: flex;
+    align-items: center;
+}
+.team-icon{
+    font-size: 45px;
+    color: #2D25A0;
+}
+
+.icon-detail{
+    padding-left: 20px;
+}
+.icon-detail h3{
+    padding-top: 20px;
+    margin-bottom: 0px;
+}
+.icon-detail p{
+    margin-top: 5px;
+}
+.team-img img{
+    padding-left: 20px;
+    border-radius: 10px;
+    width: 450px;
+    height: 550px;
+}
+
+
+/*------------------------------------------------------------------------
+        -------------- FIXTURES & RESULTS-SECTION-START------------
+----------------------------------------------------------------------- */
+.fixtures-featured{
+    padding: 15px;
+    display: flex;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.fixtures h1{
+    color: #aa4243;
+    padding-top: 30px;
+}
+.date-football{
+    margin-left: 70px;
+    border: 2px solid #ddd;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.fixtures .results{
+    margin-left: 70px;
+}
+.date-football p{
+    padding: 14px 70px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.date-football p:nth-child(2n+1){
+    background-color: #f1f1f1;
+}
+.date-football p:nth-child(2n){
+    background-color: #b39f9f;
+}
+
+/*---------------------------------------------------
+         ------- Footer-Section-Start-----------
+ --------------------------------------------------- */
+ .footer-section{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding-bottom: 60px;
+ }
+.footer-icon .fab{
+    margin-right: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+ }
+ .footer-icon .fab:nth-child(4){
+     margin-right: 0px;
+ }
+
+ .footer-text{
+     font-size: 18px;
+     margin-top: 17px;
+     font-family: 'Poppins', sans-serif;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------------------------
+         ------- Media-Query-Start-----------
+ --------------------------------------------------- */
+
+/***** SmartPhone*****/
+ @media screen and (max-width: 688px) {
+     .container{
+         width: 52%;
+     }
+     /*--------------------------------------------------
+            --------- Header-Section-Start--------
+     -------------------------------------------------- */
+    .header-section{
+        display: block;
+    }
+
+    .header-half-section h1{  
+        font-size: 36px;
+        margin-left: 50px;
+    }
+ 
+    .header-half-section a{
+       margin-left: 100px;
+       font-size: 22px;
+    }
+    .header-half-section > img{
+        width: 429px;
+        height: 320px;
+        margin-top: 50px;
+        margin-left: 0px;
+        transition: transfrom 0s;
+    }
+
+/*--------------------------------------------------------
+       ------------ player-section-Start----------
+ -------------------------------------------------------- */
+
+    .players{
+        display: grid;
+        grid-template-columns: repeat(1 , 1fr);
+        grid-row-gap: 24px;
+    }
+    .player{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+
+    }
+    .player-detail p{
+        width: 300px;
+    }
+
+    /*--------------------------------------------------------------------
+            -------------- Team-section-start--------
+    -------------------------------------------------------------------- */
+    .team-section{
+        display: block;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    }
+    .team-all-icons{
+        display: flex;
+        align-items: center;
+    }
+
+    .icon-detail{
+        padding-left: 20px;
+    }
+    .team-img img{
+        width: 95%;
+        height: 100%;
+    }
+
+    /*----------------------------------------------------------------------------
+            ------------ FIXTURES & RESULTS-SECTION-START-----------
+    --------------------------------------------------------------------------- */
+    .fixtures-featured{
+        padding: 15px;
+        display: block;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    }
+    .date-football{
+        margin-left: 10px;
+        border: 2px solid #ddd;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    }
+    .fixtures .results{
+        margin-left: 70px;
+    }
+    .fixtures-video iframe{
+        width: 310px;
+        height: 300px;
+    }
+    .date-football p{
+        padding: 7px 60px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+ }
+
+
+
+ /********** Tablet-Device **********/
+ @media screen and (min-width: 689px) and (max-width:992px) {
+    .container{
+        width: 75%;
+    }
+   .header-section{
+       display: block;
+   }
+
+   .header-half-section h1{  
+       font-size: 50px;
+       margin-left: 150px;
+   }
+
+   .header-half-section a{
+      margin-left: 150px;
+      font-size: 22px;
+   }
+   .header-half-section > img{
+       width: 529px;
+       height: 320px;
+       margin-top: 50px;
+       margin-left: 150px;
+       transition: transfrom 0s;
+   }
+
+/*--------------------------------
+      --Main-Section-Start--
+-------------------------------- */
+
+   .players{
+       display: grid;
+       grid-template-columns: repeat(2 , 1fr);
+       grid-row-gap: 24px;
+   }
+   .player{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+
+   }
+   .player-detail p{
+       width: 300px;
+   }
+
+
+   
+    /*--------------------------------------------------------------------
+            -------------- Team-section-start--------
+    -------------------------------------------------------------------- */
+    .team-section{
+        display: block;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    }
+    .team-all-icons{
+        display: flex;
+        align-items: center;
+    }
+
+    .icon-detail{
+        padding-left: 20px;
+    }
+    .team-img img{
+        width: 95%;
+        height: 100%;
+    }
+
+    /*-----------------------------------------------------------------------
+            ------------ FIXTURES & RESULTS-SECTION-START-----------
+    ---------------------------------------------------------------------- */
+    .fixtures-featured{
+        padding: 15px;
+        display: block;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    }
+    .fixtures .results{
+        text-align: center;
+    }
+    .date-football{
+        margin-left: 10px;
+        border: 2px solid #ddd;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    }
+    .fixtures .results{
+        margin-left: 70px;
+    }
+    .fixtures-video iframe{
+        width: 95%;
+        height: 300px;
+    }
+    .date-football p{
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+ }
