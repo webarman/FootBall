@@ -27,12 +27,17 @@ main{
 .header-section:hover h1{
     transform: translate(50px);
 }
-.header-half-section a{
+.header-half-section .watch-button{
     background-color: rgba(224, 44, 109, 1);
     color: white;
+    display: inline-block;
     padding: 10px 24px;
     text-decoration: none;
     border-radius: 2px;
+    transition: transform 2s;
+}
+.header-section:hover .watch-button{
+    transform: translate(50px);
 }
 .header-half-section .header-arrow-icon{
     padding-left: 8px;
