@@ -89,7 +89,6 @@ main{
 /*-----------------------------------------------------
         ------------  Team-section-start ------------
 ------------------------------------------------------- */
-
 .team-section{
     display: flex;
     padding: 15px;
@@ -179,7 +178,6 @@ main{
  .footer-icon .fab:nth-child(4){
      margin-right: 0px;
  }
-
  .footer-text{
      font-size: 18px;
      margin-top: 17px;
